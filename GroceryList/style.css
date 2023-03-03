@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    font-family: 'Fontdiner Swanky', cursive;
+    background: orange;
+}
+
+.container{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries{
+    width: 600px;
+    min-height: 100vh;
+    margin: 0;
+    background: white;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+.groceries h1{
+    font-size: 2.5rem;
+    margin-top: 0.5em;
+}
+
+.groceries i{
+    font-size: 1.1rem;
+    color: orange;
+}
+
+.groceries input{
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid brown;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+
+#allItems h2{
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+@media(max-width:480px){
+    .groceries h1{
+        font-size: 1rem;
+    }
+    .groceries i{
+        font-size: 0.9rem;
+    }
+    .groceries input{
+        font-size: 0.9rem;
+    }
+    .allItems h2{
+        font-size: 1rem;
+    }
+}
