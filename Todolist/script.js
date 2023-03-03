@@ -3,8 +3,8 @@ const taskForm = document.querySelector('#task-form');
 const taskInput = document.querySelector('#task-input');
 const taskList = document.querySelector('#task-list');
 
-// Load tasks from local storage
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+// Initialize tasks array
+let tasks = [];
 
 // Display tasks in the list
 function displayTasks() {
@@ -25,7 +25,6 @@ function addTask(event) {
   const taskText = taskInput.value.trim();
   if (taskText) {
     tasks.push(taskText);
-    localStorage.setItem('tasks', JSON.stringify(tasks));
     displayTasks();
     taskInput.value = '';
     taskInput.focus();
@@ -37,7 +36,6 @@ function removeTask(event) {
   if (event.target.classList.contains('delete-btn')) {
     const index = event.target.dataset.index;
     tasks.splice(index, 1);
-    localStorage.setItem('tasks', JSON.stringify(tasks));
     displayTasks();
   }
 }
