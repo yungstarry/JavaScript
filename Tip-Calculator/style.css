@@ -1,0 +1,118 @@
+/* Style for the body */
+.body{
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background: conic-gradient(at 125% 50%, #b78cb7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+}
+
+/* Style for the tip calculator container */
+.container {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style for the tip calculator form */
+.calculator {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 0 25px;
+    outline: none;
+    border: 1px solid lightgray;
+    text-align: center;
+    margin: auto;
+}
+
+/* Style for the tip calculator form labels */
+/* label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold;
+}  */
+
+/* Style for the tip calculator form inputs */
+input{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* Style for the tip calculator form button */
+button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.calculator button:hover{
+    background-color: #ff7c94;
+}
+
+#quality{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+
+#tip-amount {
+    visibility: hidden;
+    min-width: 250px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    background-color: limegreen;
+    color: white;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    bottom: 30px;
+   
+}
+
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein{
+    from{bottom:0; opacity: 0;}
+    to{bottom:30px; opacity: 1;}
+}
+@keyframes fadein{
+    from{bottom:0; opacity: 0;}
+    to{bottom:30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+    from{bottom:30px; opacity: 1;}
+    to{bottom:0; opacity: 0; }
+}
+@keyframes fadeout{
+    from{bottom:30px; opacity: 1;}
+    to{bottom:0; opacity: 0; }
+}
+
+
+@media(max-width: 480px){
+    .calculator input{width: 85%;}
+    .calculator button{width: 15%;}
+}
+@media(max-width: 320px){
+    .calculator input{width: 80%;}
+   
+}
