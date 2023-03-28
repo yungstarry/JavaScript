@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Manage Landing Page</title>
+  </head>
+  <body class="dark:bg-slate-800">
+    <nav class="sticky top-0 z-50 p-4 bg-darkbluebg lg:text-xl">
+      <div class="flex justify-around items-center lg:px-0">
+        <!-- header link -->
+        <div class="flex font-bold">
+          <a class="flex hover:text-gray-200 text-5xl lg:text-6xl" href="#home">
+            <span class="text-pinklast">A</span>
+            <span class="text-shyblue">d</span>
+            <span class="text-orangelast">o</span>
+            <span class="text-yellowlast">r</span>
+            <span class="text-brownlast">D</span>
+            <span class="text-graylast">e</span>
+            <span class="text-redlast">v</span>
+            <span class="text-orangelast text-xl">o</span>
+          </a>
+        </div>
+        <!-- Nav Link -->
+        <div
+          class="text-white lg:font-semibold hidden lg:flex lg:space-x-12 lg:items-center"
+        >
+          <a class="hover:text-gray-200" href="#home">Home</a>
+          <a class="hover:text-gray-200" href="#about">About</a>
+          <a class="hover:text-gray-200" href="#servies">Services</a>
+          <a class="hover:text-gray-200" href="#pricing">Pricing</a>
+          <a
+            class="hover:text-gray-200 outline outline-red-200 rounded py-2 px-4 text-white"
+            href="#contact"
+            >Contact Us</a
+          >
+        </div>
+        <!--  Hamburger Icon-->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus: outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+        <!-- Hamburger Icon  ends -->
+      </div>
+      <!-- mobile menu starts -->
+      <div
+        id="menu"
+        class="hidden flex-col items-center py-8 mt-10 space-y-6 font-bold bg-[#28264d] text-white md:w-1/2 md:self-center left-6 drop-shadow-md"
+      >
+        <a class="hover:text-gray-200" href="#home">Home</a>
+        <a class="hover:text-gray-200" href="#about">About</a>
+        <a class="hover:text-gray-200" href="#servies">Services</a>
+        <a class="hover:text-gray-200" href="#pricing">Pricing</a>
+        <a
+          class="hover:text-gray-200 outline outline-red-200 rounded py-2 px-4 text-white"
+          href="#contact"
+          >Contact Us</a
+        >
+      </div>
+      <!-- mobile menu ends -->
+    </nav>
+    <!-- Hamburger Icon -->
+
+    <!-- Hero Container -->
+    <section class="min-h-screen p-10 bg-darkbluebg">
+      <div
+        class="md:flex lg:p-20 md:space-x-5 md:justify-center md:items-center"
+      >
+        <!-- left side -->
+        <div class="flex flex-col justify-center mt-16 md:items-start">
+          <b class="text-6xl mb-16 text-shyblue md:text-7xl lg:md:text-8xl"
+            >We're a <span class="text-white">design</span> <span>and</span>
+            <span class="text-white">branding</span>
+            <span>agency</span>
+          </b>
+          <p class="text-gray-400 mb-16 md:text-xl">
+            We believe that the power of technology helps businesses. Get
+            started
+          </p>
+          <div>
+            <a
+              class="font-bold py-4 px-8 outline outline-1 outline-white bg-transparent text-white rounded transition ease-in delay-150 hover:bg-white hover:text-gray-400 duration-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+              href="#services"
+              >Get started &nbsp;
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- right side -->
+        <div class="hidden md:flex md:flex-col gap-5 md:w-1/2">
+          <!-- 1st div -->
+          <div class="flex gap-1">
+            <div class="h-40 w-40 rounded-l-full bg-shyblue"></div>
+            <div class="h-40 w-40 rounded-full bg-darkpink"></div>
+            <div class="h-40 w-40 rounded-t-full bg-pink-300"></div>
+          </div>
+          <!-- 2nd div -->
+          <div class="flex gap-2">
+            <div
+              class="h-40 w-80 rounded-tl-[100px] rounded-br-[100px] bg-blue-200"
+            ></div>
+            <div class="h-40 w-40 rounded-br-[100px] bg-orange-200"></div>
+          </div>
+          <!-- 3rd div -->
+          <div class="flex gap-1">
+            <div class="h-40 w-40 rounded-t-full bg-purple-300"></div>
+            <div
+              class="rounded-full bg-yellow-100 bg-no-repeat h-40 w-40 relative"
+            >
+              <div
+                class="h-28 w-28 bg-darkBlue flex rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+            <div class="bg-green-200 h-40 w-40 rounded-br-[100px]"></div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <!-- we offer section -->
+    <section class="bg-white">
+      <div class="p-10 gap-2 md:m-20">
+        <div class="flex gap-2">
+          <div class="h-5 w-5 rounded-l-full bg-pinkone"></div>
+          <div class="h-5 w-5 rounded-tr-full bg-blueone"></div>
+        </div>
+        <div class="font-bold text-4xl mt-4">
+          <div>We offer a</div>
+          <div>wide range of</div>
+          <div>services.</div>
+        </div>
+      </div>
+    </section>
+    <!-- Card Session -->
+
+    <section
+      class="p-6 flex items-center container mx-auto md:px-20 lg:px-32 justify-center bg-white"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-20 gap-10 lg:gap-14"
+      >
+        <!-- 1st card -->
+        <div class="p-5 bg-blue-50 rounded-lg shadow-md">
+          <div><img class="h-14" src="./img/1.svg" alt="" /></div>
+          <h1 class="text-3xl font-bold mt-5 mb-5">Web Development</h1>
+          <p class="text-3xl text-gray-500">
+            We specialize in building custom web applications that are secure,
+            scalable, and user-friendly. Whether you need a simple website, a
+            complex web application, or an e-commerce platform, we can help.
+          </p>
+        </div>
+        <!-- 2nd card -->
+        <div class="p-5 bg-blue-50 rounded-lg shadow-md">
+          <div><img class="h-14" src="./img/2.svg" alt="" /></div>
+          <h1 class="text-3xl font-bold mt-5 mb-5">Mobile Development</h1>
+          <p class="text-3xl text-gray-500">
+            We build high-quality mobile applications for iOS and Android that
+            are tailored to your specific needs. Our mobile development services
+            include app design, development, testing, and deployment.
+          </p>
+        </div>
+        <!-- 3rd card -->
+        <div class="p-5 bg-blue-50 rounded-lg shadow-md">
+          <div><img class="h-14" src="./img/3.svg" alt="" /></div>
+          <h1 class="text-3xl font-bold mt-5 mb-5">Product Design (UI/UX)</h1>
+          <p class="text-3xl text-gray-500">
+            We help you create beautiful and intuitive user interfaces that make
+            your product stand out from the crowd. Our product design services
+            include user research, wireframing, prototyping, and user testing.
+          </p>
+        </div>
+        <!-- 4rd card -->
+        <div class="p-5 bg-blue-50 rounded-lg shadow-md">
+          <div><img class="h-14" src="./img/4.svg" alt="" /></div>
+          <h1 class="text-3xl font-bold mt-5 mb-5">Product Management</h1>
+          <p class="text-3xl text-gray-500">
+            We offer product management services to help you bring your ideas to
+            life. From market research to product launch, we can guide you
+            through every step of the product development process.
+          </p>
+        </div>
+        <!-- 5rd card -->
+        <div class="p-5 bg-blue-50 rounded-lg shadow-md">
+          <div class="flex">
+            <img class="h-10" src="./img/3.svg" alt="" />
+            <img class="h-10" src="./img/1.svg" alt="" />
+            <img class="h-10" src="./img/4.svg" alt="" />
+            <img class="h-10" src="./img/2.svg" alt="" />
+          </div>
+          <h1 class="text-3xl font-bold mt-5 mb-5">
+            Product Design Other Services
+          </h1>
+          <p class="text-3xl text-gray-500">
+            We also offer a range of other services to help you grow your
+            digital products, including:
+          </p>
+          <ul class="list-inside list-disc text-lg mt-16">
+            <li>SEO optimization</li>
+            <li>Content creation and marketing</li>
+            <li>Social media marketing</li>
+            <li>Digital advertising</li>
+          </ul>
+        </div>
+
+        <!--  -->
+      </div>
+    </section>
+
+    <!-- Team description session -->
+
+    <section class="min-h-screen bg-darkbluebg">
+      <div
+        class="p-20 md:flex md:justify-between md:items-center xl:m-20 xl:gap-20 z-0"
+      >
+        <!-- left side -->
+        <div class="text-white md:w-1/2">
+          <div class="mt-10">
+            <div class="flex gap-2">
+              <div class="h-10 w-10 rounded-l-full bg-pinkone"></div>
+              <div class="10-5 w-10 rounded-tr-full bg-blueone"></div>
+            </div>
+            <div class="font-bold text-5xl md:text-6xl mt-5 md:mt-10">
+              <h1>We're a</h1>
+              <h1>team of</h1>
+              <h1>creative and</h1>
+              <h1>talented developers</h1>
+              <h1>& designers</h1>
+              <h1>based in</h1>
+              <h1>Nigeria.</h1>
+            </div>
+            <div class="mt-10">
+              <p class="text-xl">
+                "Our team is composed of a group of innovative and skilled
+                developers and designers, all located in Nigeria. With our
+                collective creativity and talent, we are dedicated to providing
+                high-quality solutions to our clients' technical needs. From
+                designing visually stunning interfaces to developing powerful
+                software, we are committed to delivering exceptional results
+                that exceed expectations.
+              </p>
+              <p class="text-xl mt-5 mb-16">
+                Our passion for innovation and excellence drives us to
+                continuously improve our skills and stay up-to-date with the
+                latest technologies. We pride ourselves on our ability to work
+                collaboratively, effectively communicate with clients, and
+                deliver exceptional products that meet their unique
+                requirements."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right div -->
+
+        <div
+          class="hidden md:flex relative h-[500px] w-[500px] bg-shyblue rounded-tl-[350px] bg-no-repeat m-20"
+        >
+          <div class="h-10 w-10 bg-shyblue rounded-tr-full"></div>
+          <div
+            class="p-4 h-24 w-24 bg-[#f2a7d8] rounded-full absolute -right-6 -top-14"
+          ></div>
+        </div>
+
+        <!--  -->
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- Five Steps sesssion -->
+    <section class="bg-white">
+      <div class="p-14 md:flex md:justify-around md:items-start">
+        <!-- Left side -->
+        <div class="md:flex md:flex-col md:w-1/4 lg:w-1/3">
+          <div class="flex gap-2">
+            <div class="h-10 w-10 rounded-l-full bg-pinkone"></div>
+            <div class="10-5 w-10 rounded-tr-full bg-blueone"></div>
+          </div>
+          <div class="font-bold text-5xl md:text-6xl mt-5 md:mt-10">
+            <h1>A Simple, yet</h1>
+            <h1>effective five steps</h1>
+            <h1>process.</h1>
+          </div>
+          <div>
+            <img class="rounded-full mt-10" src="./img/girl.jpg" alt="" />
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="md:grid md:grid-cols-2 md:gap-10 md:w-1/2 lg:w-1/3">
+          <!-- 1st -->
+          <div class="bg-green-100 rounded-lg p-5 mt-10">
+            <h1 class="font-bold text-3xl xl:text-4xl mt-1 text-green-500">
+              Project Idea
+            </h1>
+            <p class="text-lg md:text-sm mt-5">
+              The first step in the project development process is to come up
+              with a clear and concise idea of what you want to build. This
+              could be a website, mobile app, or any other type of software
+              application. You should identify the target audience for your
+              project, define the main features and functionality, and set
+              achievable goals and objectives.
+            </p>
+          </div>
+          <!-- 2nd -->
+          <div class="bg-yellow-100 rounded-lg p-5 mt-10">
+            <h1 class="font-bold text-3xl xl:text-4xl mt-1 text-yellow-500">
+              Research
+            </h1>
+            <p class="text-lg md:text-sm mt-5">
+              Once you have a clear idea of what you want to build, the next
+              step is to research and gather information on your project. This
+              could include conducting market research to understand your target
+              audience and competition, studying existing solutions in the
+              market, and identifying the technologies and tools required to
+              build your project.
+            </p>
+          </div>
+
+          <!--  -->
+          <!-- 3rd -->
+          <div class="bg-blue-100 rounded-lg p-5 mt-10">
+            <h1 class="font-bold text-3xl xl:text-4xl mt-1 text-blue-500">
+              Execution
+            </h1>
+            <p class="text-lg md:text-sm mt-5">
+              With a clear idea and research in hand, the next step is to
+              execute on your project. This could involve creating a project
+              plan and roadmap, designing the user interface and user
+              experience, writing code, integrating third-party APIs and
+              services, and building a database to store your project data.
+            </p>
+          </div>
+          <!--  -->
+          <!-- 4th -->
+          <div class="bg-orange-100 rounded-lg p-5 mt-10">
+            <h1 class="font-bold text-3xl xl:text-4xl mt-1 text-orange-500">
+              Testing
+            </h1>
+            <p class="text-lg md:text-sm mt-5">
+              Once you have built your project, it's important to test it
+              thoroughly to ensure it works as intended. This could involve
+              conducting unit tests to test individual functions, integration
+              testing to test how different components work together, and user
+              acceptance testing to ensure your project meets the needs and
+              expectations of your target audience.
+            </p>
+          </div>
+          <!--  -->
+          <!-- 5th -->
+          <div class="bg-purple-100 rounded-lg p-5 mt-10">
+            <h1 class="font-bold text-3xl xl:text-4xl mt-1 text-purple-500">
+              Launch
+            </h1>
+            <p class="text-lg md:text-sm mt-5">
+              The final step in the project development process is to launch
+              your project. This could involve deploying your project to a web
+              server or app store, marketing your project to your target
+              audience, and monitoring its performance to identify and address
+              any issues.
+            </p>
+          </div>
+          <!--  -->
+
+          <!--last div for this right side-->
+        </div>
+        <!--last div-->
+      </div>
+    </section>
+
+    <!-- Laptest project session -->
+    <section>
+      <div class="px-10 py-20 bg-gray-100 mt-10 md:px-[200px] xl:px-[300px]">
+        <!-- 1st side -->
+        <div>
+          <div class="flex gap-2">
+            <div class="h-10 w-10 rounded-l-full bg-pinkone"></div>
+            <div class="10-5 w-10 rounded-tr-full bg-blueone"></div>
+          </div>
+          <div class="text-4xl text-darkbluebg font-bold mt-5">
+            <h1>See our latest</h1>
+            <h1>project</h1>
+          </div>
+        </div>
+
+        <!-- second slide -->
+        <div
+          class="md:flex md:flex-row md:gap-10 xl:gap-10 justify-center items-center"
+        >
+          <!-- 1st one -->
+          <div class="flex flex-col gap-5">
+            <!-- image div -->
+            <div>
+              <img
+                class="rounded-tl-[200px] hover:rounded-tl-[150px] duration-700"
+                src="./img/7.jpg"
+                alt=""
+              />
+            </div>
+            <!-- date div -->
+            <div class="flex justify-between text-lg">
+              <p class="font-bold text-red-600">Royalfy</p>
+              <p class="text-gray-500">Jan 15, 2023</p>
+            </div>
+            <!-- last div -->
+            <div>
+              <h1
+                class="font-bold text-3xl text-[#28264d] hover:text-blue-400 duration-500 cursor-pointer"
+              >
+                Website Design Royalfy
+              </h1>
+              <p class="text-2xl">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti optio delectus voluptatum debitis, expedita eos fugiat
+                facere repellendus, aperiam dicta consectetur, nihil veritatis
+                doloremque cupiditate omnis. Itaque fugit animi aspernatur.
+              </p>
+            </div>
+            <!--  -->
+          </div>
+          <!-- last -->
+
+          <!-- 2nd one -->
+          <div class="flex flex-col gap-5 mt-10 md:mt-[-100px]">
+            <!-- image div -->
+            <div>
+              <img
+                class="rounded-b-[200px] hover:rounded-tl-[150px] duration-700"
+                src="./img/8.jpg"
+                alt=""
+              />
+            </div>
+            <!-- date div -->
+            <div class="flex justify-between text-lg">
+              <p class="font-bold text-red-600">Royalfy</p>
+              <p class="text-gray-500">Jan 15, 2023</p>
+            </div>
+            <!-- last div -->
+            <div>
+              <h1
+                class="font-bold text-3xl text-[#28264d] hover:text-blue-400 duration-500 cursor-pointer"
+              >
+                Website Design Royalfy
+              </h1>
+              <p class="text-2xl">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti optio delectus voluptatum debitis, expedita eos fugiat
+                facere repellendus, aperiam dicta consectetur, nihil veritatis
+                doloremque cupiditate omnis. Itaque fugit animi aspernatur.
+              </p>
+            </div>
+            <!--  -->
+          </div>
+          <!-- last -->
+          <!-- 3rd one -->
+          <div class="flex flex-col gap-5 mt-10 md:mt-[-200px]">
+            <!-- image div -->
+            <div>
+              <img
+                class="rounded-tl-[200px] hover:rounded-tl-[150px] duration-700"
+                src="./img/9.jpg"
+                alt=""
+              />
+            </div>
+            <!-- date div -->
+            <div class="flex justify-between text-lg">
+              <p class="font-bold text-red-600">Royalfy</p>
+              <p class="text-gray-500">Jan 15, 2023</p>
+            </div>
+            <!-- last div -->
+            <div>
+              <h1
+                class="font-bold text-3xl text-[#28264d] hover:text-blue-400 duration-500 cursor-pointer"
+              >
+                Website Design Royalfy
+              </h1>
+              <p class="text-2xl">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti optio delectus voluptatum debitis, expedita eos fugiat
+                facere repellendus, aperiam dicta consectetur, nihil veritatis
+                doloremque cupiditate omnis. Itaque fugit animi aspernatur.
+              </p>
+            </div>
+            <!--  -->
+          </div>
+          <!-- last -->
+        </div>
+
+        <!-- final -->
+      </div>
+    </section>
+    <!-- latest project ends -->
+
+    <!-- Relationship session starts -->
+    <section class="bg-white">
+      <div class="p-10">
+        <!-- 1st slide -->
+        <div class="flex flex-col justify-center items-center">
+          <div class="flex gap-2">
+            <div class="h-10 w-10 rounded-l-full bg-pinkone"></div>
+            <div class="10-5 w-10 rounded-tr-full bg-blueone"></div>
+          </div>
+          <div class="font-bold text-5xl text-center mb-10">
+            <h1>Relationships based on trust.</h1>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="flex gap-10 flex-col md:flex-row md:px-[150px] xl:px-[300px]"
+        >
+          <!-- 2nd slide -->
+          <div class="bg-gray-100 p-5">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-full h-32 w-32 mb-5"
+                src="./img/10.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h1 class="font-bold text-2xl mb-5">"The support is awesome"</h1>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, quis viverra ornare, eros dolor interdum.
+              </p>
+
+              <h1 class="font-bold text-2xl mt-5">Emma Waltz</h1>
+              <p class="text-red-500">Company Name</p>
+            </div>
+          </div>
+          <!--  -->
+          <!-- 2nd slide -->
+          <div class="bg-gray-100 p-5">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-full h-32 w-32 mb-5"
+                src="./img/10.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h1 class="font-bold text-2xl mb-5">"The support is awesome"</h1>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, quis viverra ornare, eros dolor interdum.
+              </p>
+
+              <h1 class="font-bold text-2xl mt-5">Emma Waltz</h1>
+              <p class="text-red-500">Company Name</p>
+            </div>
+          </div>
+          <!--  -->
+          <!-- 2nd slide -->
+          <div class="bg-gray-100 p-5">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-full h-32 w-32 mb-5"
+                src="./img/10.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h1 class="font-bold text-2xl mb-5">"The support is awesome"</h1>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, quis viverra ornare, eros dolor interdum.
+              </p>
+
+              <h1 class="font-bold text-2xl mt-5">Emma Waltz</h1>
+              <p class="text-red-500">Company Name</p>
+            </div>
+          </div>
+          <!-- sencond last div -->
+        </div>
+        <!-- last div -->
+      </div>
+    </section>
+    <!-- Relationship session ends -->
+
+    <!-- lets build section -->
+    <section class="bg-darkbluebg">
+      <div
+        class="p-10 class= md:flex gap-10 md:flex-row md:px-[50px] xl:px-[300px] md:justify-center"
+      >
+        <!-- 1st part -->
+        <div class="flex flex-col md:w-1/2">
+          <div class="flex gap-2">
+            <div class="h-10 w-10 rounded-l-full bg-pinkone"></div>
+            <div class="10-5 w-10 rounded-tr-full bg-blueone"></div>
+          </div>
+          <h1 class="text-white font-bold text-3xl mt-5 mb-5">
+            Let's build something great!!!
+          </h1>
+          <p class="text-white text-xl">
+            I offer a range of services, including web and mobile development,
+            UI/UX design, and product management. With a focus on creativity,
+            innovation, and customer satisfaction, I am dedicated to delivering
+            high-quality solutions that exceed expectations. Let's work together
+            to bring your vision to life and build something amazing."
+          </p>
+        </div>
+        <!-- 2nd part -->
+
+        <div class="space-x-10 gap-10 mt-10">
+          <button
+            class="bg-[#47bdff] py-5 px-8 hover:px-6 hover:py-3 duration-500 hover:bg-blue-900 hover:text-gray-100 rounded-full font-semibold text-[#28264d]"
+          >
+            Hire Us
+          </button>
+          <button
+            class="bg-white py-5 px-8 rounded-full font-semibold text-[#28264d]"
+          >
+            About Us
+          </button>
+        </div>
+
+        <!--  -->
+      </div>
+    </section>
+    <!-- lets build section end -->
+
+    <!-- Last session begins -->
+    <section
+      class="bg-darkbluebg min-h-screen hidden py-20 md:px-[150px] xl:px-[300px] md:py-[10px] md:pb-[190px] md:flex flex-row gap-0 justify-center"
+    >
+      <div
+        class="h-[300px] w-[50%] md:h-[600px] md:w-full bg-[#eda0a8] rounded-tl-[75px] md:rounded-tl-[150px] md:rounded-br-[150px] rounded-br-[75px]"
+      ></div>
+      <div
+        class="h-[300px] w-[50%] md:h-[600px] md:w-full flex md:flex-col gap-0"
+      >
+        <div class="h-[50%] w-[100%] bg-[#9bdaf2] rounded-full"></div>
+        <div class="h-[50%] w-[100%] bg-[#e5ba08]"></div>
+      </div>
+      <div class="h-[600px] w-full flex flex-col gap-0">
+        <div class="h-[50%] bg-[#94b4bf] rounded-br-[150px]"></div>
+        <div class="h-[50%] bg-[#f25260] rounded-full"></div>
+      </div>
+      <div class="h-[600px] w-full flex flex-col gap-0">
+        <div class="h-[50%] bg-[#fdc067] rounded-tl-[150px]"></div>
+        <div class="h-[50%] bg-[#d74747] rounded-b-full"></div>
+      </div>
+    </section>
+    <!-- Last session ends -->
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
