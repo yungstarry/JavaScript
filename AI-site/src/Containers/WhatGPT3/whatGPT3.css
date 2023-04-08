@@ -50,12 +50,12 @@
     font-size: 34px;
     line-height: 45px;
     font-weight: 800;
-    
+
     max-width: 510px;
 }
 
 .gpt3__whatgpt3-heading p {
-    
+
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -98,10 +98,16 @@
 }
 
 @media screen and (max-width: 650px) {
+    .gpt3__whatgpt3-container .gpt3__features-container__feature {
+
+        min-width: 110px;
+
+    }
 
     /* Customizing feature component as per needs */
     .gpt3__whatgpt3-feature .gpt3__features-container__feature {
         flex-direction: column;
+
     }
 
     /* Customizing feature component as per needs */
@@ -113,6 +119,7 @@
         font-size: 28px;
         line-height: 40px;
     }
+
 }
 
 @media screen and (max-width: 350px) {
