@@ -11,6 +11,7 @@ btn.addEventListener("click", () => {
 
 
 
+const HomeBtn = document.getElementById("home");
 const generalBtn = document.getElementById("general");
 const businessBtn = document.getElementById("business");
 const sportsBtn = document.getElementById("sports");
@@ -26,30 +27,32 @@ var newsdetails = document.getElementById("newsdetails"); // corrected spelling
 let newsDataArr;
 
 // api
-const API_KEY = "5fd47d9f391d473d9be6ffa8c68be02d";
+const API_KEY = "9e9b7d1c2042476586e5d3584b6e7cab";
 const HEADLINES_NEWS =
   "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + API_KEY; // corrected URL
 const GENERAL_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=de&category=general&apiKey=" +
-  API_KEY; // corrected URL
+  "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=" + API_KEY; // corrected URL 
 const BUSINESS_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=" +
+  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" +
   API_KEY; // corrected URL
 const SPORTS_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=de&category=sports&apiKey=" +
+  "https://newsapi.org/v2/everything?domains=skysports.com&apiKey=" +
   API_KEY; // corrected URL
 const ENTERTAINMENT_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=de&category=entertainment&apiKey=" +
-  API_KEY; // corrected URL
+  "https://newsapi.org/v2/everything?domains=pulse.ng&apiKey=" + API_KEY; // corrected URL
 const TECHNOLOGY_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=de&category=technology&apiKey=" +
-  API_KEY; // corrected URL
+  "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=" + API_KEY; // corrected URL
 const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 
 window.onload = function () {
   newsType.innerHTML = "<h4>Headlines</h4>";
   fetchHeadlines();
 };
+
+HomeBtn.addEventListener("click", function () {
+  newsType.innerHTML = "<h4>Home</h4>";
+  fetchHeadlines();
+});
 
 generalBtn.addEventListener("click", function () {
   newsType.innerHTML = "<h4>General</h4>";
@@ -73,7 +76,7 @@ technologyBtn.addEventListener("click", function () {
 
 entertainmentBtn.addEventListener("click", function () {
   // corrected variable name
-  newsType.innerHTML = "<h4>Entertainment</h4>";
+  newsType.innerHTML = "<h4>Naija</h4>";
   fetchEntertainmentNews();
 });
 
