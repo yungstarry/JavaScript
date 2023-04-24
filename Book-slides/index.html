@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AdorDev" />
+    <meta
+      name="description"
+      content="The official website for The Little Taco Shop"
+    />
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Library Project</h1>
+    <div id="newBtn-Container" class="newbook">
+      <button id="newBtn">+ New Book</button>
+    </div>
+
+    <div id="popUp">
+      <form id="form" action="">
+        <span class="close">&times;</span>
+        <legend>New Book</legend>
+        <div id="textInput">
+          <p>
+            <input type="text" id="title" name="title" placeholder="Title" />
+          </p>
+          <p>
+            <input type="text" id="author" name="author" placeholder="Author" />
+          </p>
+          <p>
+            <input type="text" id="pages" name="pages" placeholder="Pages" />
+          </p>
+        </div>
+        <div id="checkBox">
+          <p>
+            <label>Read:</label>
+            <input type="checkbox" id="read" name="read" value="yes" />
+          </p>
+          <button type="submit" form="form" id="addBtn">Add</button>
+        </div>
+      </form>
+    </div>
+    <div id="Library-container"></div>
+
+    <!-- Scripts -->
+  <script src="script.js"></script>
+  </body>
+</html>
