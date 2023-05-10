@@ -1,0 +1,30 @@
+{
+  "name": "practice-land",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yungstarry/To_doList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yungstarry/To_doList.git"
+  },
+  "homepage": "https://github.com/yungstarry/neww#readme",
+  "devDependencies": {
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21"
+  }
+}
